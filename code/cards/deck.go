@@ -12,6 +12,9 @@ import (
 // Create a new type of 'deck'
 // which is a slice of strings
 type deck []string
+// var cardSuits = [4]string{"Spades", "Diamonds", "Hearts", "Clubs"}
+// var	cardValues = [4]string{"Ace", "Two", "Three", "Four"}
+
 
 func newDeck() deck {
 	cards := deck{}
