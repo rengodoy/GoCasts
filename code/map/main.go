@@ -10,9 +10,22 @@ func main() {
 	}
 
 	colors["yellow"] = "laksjdf"
+	printMap(colors)
+	println(" ")
 	delete(colors, "yellow")
 
 	printMap(colors)
+
+	var colors1 map[string]string
+	// colors1["white"] = "#ffffff" -> Não funciona
+
+	printMap(colors1)
+	colors2 := make(map[int]string)
+	colors2[1] = "Azul"
+	for key, value := range colors2 {
+		println(key, value)
+	}
+
 }
 
 func printMap(c map[string]string) {
